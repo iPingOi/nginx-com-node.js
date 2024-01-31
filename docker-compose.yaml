@@ -9,9 +9,12 @@ services:
     restart: always
     volumes:
       - ./app:/usr/src/app
+      - /usr/src/app/node_modules
     tty: true
     networks:
       - node-network
+    depends_on:
+      - db
   db:
     image: mysql:5.7
     command: --innodb-use-native-aio=0

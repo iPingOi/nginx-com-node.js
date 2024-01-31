@@ -21,6 +21,8 @@ Eu aprendi bastante coisa no modulo de docker, conceitos muito bem fundamentados
 
 A maior dificuldade neste projeto foi fazer ele utilizar o proxy reverso, ele estava aparecendo o html base do nginx.
 
+O banco de dados demorou um pouco para subir. Eu achei que era algum erro, mas esperei um pouco mais e deu tudo certo.
+
 
 ## Referências
 
