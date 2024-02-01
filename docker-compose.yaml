@@ -6,6 +6,8 @@ services:
       context: ./app
       dockerfile: Dockerfile
     container_name: app
+    entrypoint: dockerize -wait tcp://db:3306 -timeout 40s
+    command: node src/index.js
     restart: always
     volumes:
       - ./app:/usr/src/app
